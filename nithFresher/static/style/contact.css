@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+body
+{
+    min-height: 100vh;
+    background: #270e4e;
+    overflow-y: hidden;
+}
+
+.navbar
+{
+    z-index: 1000;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-right: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1000;
+
+}
+.plink
+{
+    text-decoration: none;
+    padding: 8px 20px;
+    color: #fff;
+    z-index: 1000;
+    
+}
+header ul li:hover,
+header ul li .active
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    width: 100%;
+    
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: linear-gradient(#ffeb3b,#e91e63);
+    transform: translate(-70%,-70%);
+
+}
+section::after
+{
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(#2196f3,#83d8ff);
+    transform: translateY(80%);
+
+}
+.container
+{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+}
+.container::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+.container h2
+{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.container .row100
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.container .row100 .colu
+{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 20px;
+}
+.container .row100 .colu .inputBox
+{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+}
+.container .row100 .colu .inputBox input,
+.container .row100 .colu .inputBox textarea
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+}
+.container .row100 .colu .inputBox .text
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.container .row100 .colu .inputBox input:focus + .text,
+.container .row100 .colu .inputBox textarea:focus + .text
+{
+    top: -35px;
+    left: -10px;
+}
+.container .row100 .colu .inputBox .line
+{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+
+}
+.container .row100 .colu .inputBox input:focus ~ .line,
+.container .row100 .colu .inputBox input:valid ~ .line
+{
+    height: 100%;
+}
+.container .row100 .colu .inputBox textarea:focus ~ .line,
+.container .row100 .colu .inputBox textarea:valid ~ .line
+{
+    height: 100%;
+}
+.btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #27746e, #0f722d);
+    transition: 0.5s;
+
+}
+.btn-primary:hover
+{
+    transform: translateY(-10%);
+    background-image: linear-gradient(to right, #226963, #0d6126d5);
+}
+

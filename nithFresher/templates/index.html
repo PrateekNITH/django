@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style/style.css">
+
+    <title>Home</title>
+    <link rel="icon" href="/static/img/logo-wb.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+
+        <!--NAVIGATION BAR  -->
+        <nav class="navbar navbar-expand-lg navbar-dark " id="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">NITH Students</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="ms-auto">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="active plink" aria-current="page" href="#navigation">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class='plink' href="study">Study Material</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class='plink' href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class='plink' href="#sec">Explore</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class='plink' href="contact">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section style="
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+">
+        <img src="/static/img/stars.png" id="stars" class="pimg">
+        <img src="/static/img/moon.png" id="moon" class="pimg">
+        <img src="/static/img/mountains_behind.png" id="mountains_behind" class="pimg">
+        <h2 id="text">Welcome</h2>
+        <a href="#" id="btn">Keep Scrolling</a>
+        <img src="/static/img/mountains_front.png" id="mountains_front" class="pimg">
+    </section>
+
+    <div class="sec" id="sec">
+        <h2>Parallax Scrolling Effect</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut fugit quaerat porro aspernatur ea sed asperiores
+            soluta. Dolores, expedita vitae. Laboriosam amet molestiae neque quae, vel dolore, eos voluptate expedita
+            blanditiis sequi et maxime deleniti adipisci nostrum, pariatur incidunt ipsum hic quidem quisquam quod.
+            Nulla adipisci explicabo unde quisquam amet debitis quasi dolorum minima architecto minus. A voluptatum iure
+            ad sapiente vitae non nisi ipsa expedita, nam illo. Repudiandae fugit dignissimos beatae eveniet, ipsam odio
+            eum amet aut rem. Tenetur aut repellendus eveniet nihil hic alias. Illum repudiandae ut assumenda facere
+            impedit sequi nostrum aliquam blanditiis, minima et ducimus sed voluptatibus magnam natus soluta quia eius
+            est veritatis, eligendi, vel nesciunt? Modi ipsum consectetur rem eveniet officia, minus ratione iusto
+            dolores dolorum maiores animi explicabo eos ipsa tenetur dolorem incidunt aliquid, quos at mollitia. Laborum
+            dolorem laudantium ab vel aspernatur, necessitatibus architecto impedit ipsum perspiciatis dolorum hic
+            expedita obcaecati. Vero minima esse rerum, ad architecto quia ipsum optio ex modi! Dolore obcaecati
+            necessitatibus, quam possimus deleniti officia dolores cumque sequi excepturi eaque maxime recusandae
+            tenetur ex quis earum debitis molestias vel nostrum odio? Temporibus delectus id vero quibusdam dolore
+            deserunt ea qui vitae, eveniet debitis quasi alias harum cum ipsum!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odit ex vitae aut. Ducimus quas beatae rem,
+            soluta, atque, ratione adipisci ad nihil perspiciatis optio suscipit in earum culpa? Officia possimus ipsa
+            expedita rerum quod, eum dignissimos laudantium earum repudiandae, error quaerat illum odit placeat
+            similique maxime aliquam vero veniam!</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odit ex vitae aut. Ducimus quas beatae rem,
+            soluta, atque, ratione adipisci ad nihil perspiciatis optio suscipit in earum culpa? Officia possimus ipsa
+            expedita rerum quod, eum dignissimos laudantium earum repudiandae, error quaerat illum odit placeat
+            similique maxime aliquam vero veniam!</p>
+
+
+            
+
+    </div>
+
+    <div class="sec1" id="sec1">
+        
+        <ul>
+            <li>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * .25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = 50 + value * 3 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+
+        })
+
+    </script>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
